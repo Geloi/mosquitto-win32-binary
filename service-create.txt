@@ -1,0 +1,5 @@
+REM create service
+sc create mosquitto binPath= "C:\util\mosquittoWithWebsocket\mosquitto.exe -c C:\util\mosquittoWithWebsocket\mosquitto.conf" DisplayName= "mosquitto broker" start= auto
+REM remove service
+sc stop mosquitto
+sc delete mosquitto
